@@ -296,7 +296,7 @@ p {
     filter: opacity(0);
 }
 
-.active {
+.wrp-active {
     background-color: #fff;
     filter: opacity(1);
 }
