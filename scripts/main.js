@@ -130,3 +130,11 @@ $('html').ripples({
     dropRadius: 10,
     perturbance: 0.00001,
 });
+
+
+// ランダムにワードを選ぶ
+
+var randWords = ["Sky Land!", "Library!"];
+var rand = Math.floor(Math.random() * randWords.length);
+var randWord = randWords[rand];
+document.getElementById("rand-word-elem").innerHTML = randWord
