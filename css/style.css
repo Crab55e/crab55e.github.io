@@ -78,7 +78,6 @@ body {
     position: absolute;
     height: 60px;
     width: 60px;
-    background: linear-gradient(-90deg, #1cbbff, #54afff, #1cbbff);
     background-size: 400% 400%;
     animation: GradientBackground 15s ease infinite;
     display: flex;
