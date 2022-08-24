@@ -26,23 +26,23 @@
     <div class="top " style="padding-bottom:0 ;">
         <div class="alert " id="alert "></div>
         <div class="title ">404 - not found</div>
-        <div class="nomal-sub-title">;_;</div>
-        <div onclick="toTop()" class="nomal-sub-title" style="font-size: 2.5rem; color: rgb(196, 248, 255); cursor: pointer;">
-            to the home
+        <div class="nomal-sub-title">(;_;)</div>
+        <div class="nomal-sub-title" style="font-size: 2.5rem; color: rgb(196, 248, 255); cursor: pointer;">
+            <a href="/">to the home</a>
         </div>
     </div>
-    <script>
-        function toTop() {
-            document.getElementById('wrap').classList.add('wrp-active')
-            setTimeout("window.location.href = '/';", 1100)
-
-        }
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
     <script src="/scripts/main.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js "></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js "></script>
+    <script>
+        $('html').ripples({
+            resolution: 1000,
+            dropRadius: 10,
+            perturbance: 0.00001,
+        });
+    </script>
 </body>
 
 </html>

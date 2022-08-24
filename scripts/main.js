@@ -51,7 +51,7 @@ function splitLetters(word) {
 }
 
 changeWord();
-setInterval(changeWord, 4000);
+setInterval(changeWord, 2000);
 
 
 
@@ -125,11 +125,6 @@ $(mouseTarget).hover(function(e) {
 });
 
 
-$('html').ripples({
-    resolution: 1000,
-    dropRadius: 10,
-    perturbance: 0.00001,
-});
 
 
 // ランダムにワードを選ぶ
