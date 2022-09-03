@@ -123,13 +123,3 @@ $(mouseTarget).hover(function(e) {
 }, function() {
     scale = 1;
 });
-
-
-
-
-// ランダムにワードを選ぶ
-
-var randWords = ["Sky Land!", "Library!"];
-var rand = Math.floor(Math.random() * randWords.length);
-var randWord = randWords[rand];
-document.getElementById("rand-word-elem").innerHTML = randWord
