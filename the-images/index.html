@@ -13,18 +13,19 @@
     <!--CSS-->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
 </head>
 
-<body style="background: #ff33cc;">
-
+<body style="background: #2a2a2a;">
     <div id="stkr"></div>
     <div class="menu">
-        <div class="toggle" style="background-color: #ff33cc;">
+        <div class="toggle" style="background-color: #2a2a2a;">
             <ion-icon name="add"></ion-icon>
         </div>
         <li style="--i:0;">
@@ -72,7 +73,7 @@
     <div class="top ">
         <div class="alert " id="alert "></div>
         <div class="title ">Hello, /images</div>
-        <div class="sub-title">
+        <div class="sub-title no-copy">
             <p>
                 <span class="word">やあ</span>
                 <span class="word">...</span>
@@ -82,7 +83,10 @@
             </p>
         </div>
         <a href="#main ">
-            <div style="color: #fff; font-size: 1.5rem; user-select: none; margin-top: 160px; text-shadow: 0px 0px 3px #fff; ">- view -</div>
+            <div style="color: #fff; font-size: 1.5rem; user-select: none; margin-top: 160px; text-shadow: 0px 0px 3px #fff; ">
+                <div>view</div>
+                <span class="material-symbols-rounded" style="color: #fff;">expand_more</span>
+            </div>
         </a>
     </div>
     <div>
@@ -99,17 +103,16 @@
         </svg>
     </div>
     <div class="main " id="main ">
-        <div class="topic-title " style="border-bottom: #000 1px solid; width: 300px; ">/images</div>
-        <div class="topic-sub-title ">画像</div>
-        <div class="contents ">
-            <div>カニさんの画像いっぱい！</div>
-            <div>ああ、まぁどうでもいいか</div>
-            <div class="line " style="width: 600px; "></div>
-            <div>まぁその、僕がアイコンとかロゴとかを書いてるんですよ</div>
-            <div>まぁいろいろってサーバーのためにお金が欲しいんです</div>
-            <div>まぁバイトしろってね、なるかもしれませんが不登校にそれは厳しいじゃない！</div>
-            <div>まぁ(4回目)アイコンとかロゴとかあります、作ってほしかったら言ってね！</div>
-            <div>まぁ(5回目)詳細は↓へ</div>
+        <div class="topic-title" style="border-bottom: #000 1px solid; width: 300px; ">/images</div>
+        <div class="topic-sub-title">画像</div>
+        <div class="contents">
+            <div>僕が描いた(?)アイコンとかロゴがいっぱいあります！</div>
+            <div>気に入ったものがあったら「これみたいな感じで～」てな感じで僕に話しかけてくれたら</div>
+            <div>よろこんで作りますよ！！</div>
+            <div class="line" style="width: 600px;"></div>
+            <div>もし出来上がりが気に入って、「これならお金を払っても良いな！」</div>
+            <div>って思ってくれたならお金を受け取る感じです</div>
+            <div>個人事業主になれるよう頑張ります...</div>
         </div>
     </div>
     <div style="background-color:#fff;">
@@ -118,25 +121,29 @@
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="#ff33cc66" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="#ff33cc44" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="#ff33cc22" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#ff33ccff" />
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#2a2a2a66" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="#2a2a2a44" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#2a2a2a22" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2a2aff" />
         </g>
         </svg>
     </div>
-    <div class="skills ">
+    <div class="skills">
         <div class="topic-title " style="border-bottom: #fff 1px solid; width: 300px; ">/image.png</div>
-        <div class="topic-sub-title ">詳細</div>
+        <div class="topic-sub-title ">一覧</div>
         <div class="contents ">
-            <div>ここまで読みに来たということはアイコンが欲しいということですか！？</div>
-            <div>まぁ...ただの興味かもしれないですね...</div>
-            <div></div>
+            <div>まぁ、そうですね...ご覧ください</div>
+        </div>
+        <div class="images">
+            <ul>
+                <li><img src="images/crab55e-logo.png" alt="画像を表示できませんでした;("></li>
+            </ul>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
-    <script src=" /scripts/main.js "></script>
+    <script src="   /scripts/main.js"></script>
+    <script src="/scripts/toggle-menu.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js "></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js "></script>
 </body>

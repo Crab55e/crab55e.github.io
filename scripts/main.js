@@ -82,12 +82,7 @@ for (let i = 0; i < smoothScrollTrigger.length; i++) {
 
 }
 
-let toggle = document.querySelector('.toggle');
-let menu = document.querySelector('.menu')
 
-toggle.onclick = function() {
-    menu.classList.toggle('active')
-}
 
 // マウスストーカー関連の要素（任意で変更してください）
 const mouseStalker = "#stkr"; // マウスストーカーになる要素を指定

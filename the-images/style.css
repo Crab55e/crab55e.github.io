@@ -1,0 +1,9 @@
+/* THE IMAGES - CSS*/
+
+.images {
+    width: 100%;
+}
+
+div.images ul li img {
+    width: 30%;
+}

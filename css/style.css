@@ -1,14 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=M+PLUS+Rounded+1c:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=M+PLUS+Rounded+1c:wght@300&display=swap);
 body {
     background: #1cbbff;
     text-align: center;
     font-family: 'Josefin Sans', 'M PLUS Rounded 1c', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 ::selection {
     background-color: #000;
-    color: #fff;
+    color: #fff
+}
+
+.no-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
 .menu {
@@ -20,7 +41,7 @@ body {
     align-items: center;
     right: 1%;
     top: 1%;
-    color: #5db3ff;
+    color: #5db3ff
 }
 
 .menu li {
@@ -29,12 +50,12 @@ body {
     transform-origin: 100px;
     left: 0;
     transition: .5s;
-    transition-delay: calc(0.1s * var(--i));
-    transform: rotate(0deg)translateX(80px);
+    transition-delay: calc(.1s * var(--i));
+    transform: rotate(0) translateX(80px)
 }
 
 .menu.active li {
-    transform: rotate(calc(360deg / 8 * var(--i)));
+    transform: rotate(calc(360deg / 8 * var(--i)))
 }
 
 .menu li a {
@@ -49,10 +70,11 @@ body {
     transition: .5s;
     border: 2px solid #fff;
     color: #fff;
+    filter: drop-shadow(0 0 3px #fff);
 }
 
 .menu li a:hover {
-    color: #0000;
+    color: #0000
 }
 
 .menu li .fake-a {
@@ -66,7 +88,7 @@ body {
     box-shadow: 0 0 3px #ffff;
     transition: .5s;
     border: 2px solid #fff;
-    color: #fff;
+    color: #fff
 }
 
 .menu li .fake-a:hover {
@@ -75,6 +97,7 @@ body {
 }
 
 .toggle {
+    background: #1cbbff;
     position: absolute;
     height: 60px;
     width: 60px;
@@ -90,15 +113,15 @@ body {
     box-shadow: 0 0 3px #ffff;
     font-size: 2em;
     transition: 1.5s;
-    color: #fff;
+    color: #fff
 }
 
 .menu.active .toggle {
-    transform: rotate(315deg);
+    transform: rotate(315deg)
 }
 
 .alert {
-    position: absolute;
+    position: absolute
 }
 
 .title {
@@ -106,37 +129,37 @@ body {
     font-size: 8rem;
     margin-top: 250px;
     border-bottom: 1px solid #fff;
-    font-weight: 100;
+    font-weight: 100
 }
 
 .topic-title {
     font-size: 3rem;
     text-shadow: 0 13.36px 3.896px #4444, 0 -2px 1px #fff;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .topic-title::after {
-    content: "-";
+    content: "-"
 }
 
 .topic-title::before {
-    content: "-";
+    content: "-"
 }
 
 .topic-sub-title {
     font-size: 1.5rem;
     text-shadow: 0 13.36px 3.896px #4444, 0 -2px 1px #fff;
     padding-bottom: 30px;
-    padding-top: 10px;
+    padding-top: 10px
 }
 
 .link {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    color: rgb(196, 248, 255);
-    text-decoration: none;
+    color: #c4f8ff;
+    text-decoration: none
 }
 
 .link:after {
@@ -145,14 +168,14 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: rgb(196, 248, 255);
+    background-color: #c4f8ff;
     transform: translate(-100%, 0);
-    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
-    content: "";
+    transition: transform cubic-bezier(.215, .61, .355, 1) .4s;
+    content: ""
 }
 
 .link:hover:after {
-    transform: translate(0, 0);
+    transform: translate(0, 0)
 }
 
 .sub-title {
@@ -160,7 +183,7 @@ body {
     text-align: center;
     font-size: 4rem;
     margin-top: 30px;
-    font-weight: 100;
+    font-weight: 100
 }
 
 .nomal-sub-title {
@@ -168,96 +191,96 @@ body {
     text-align: center;
     font-size: 3rem;
     margin-top: 30px;
-    font-weight: 100;
+    font-weight: 100
 }
 
 p {
     display: inline-block;
     vertical-align: top;
-    margin: 0;
+    margin: 0
 }
 
 .word {
     opacity: 0;
-    text-align: center;
+    text-align: center
 }
 
 .letter {
     display: inline-block;
     position: relative;
     transform: translateZ(25px);
-    transform-origin: 50% 50% 25px;
+    transform-origin: 50% 50% 25px
 }
 
 .letter.out {
     transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: transform .32s cubic-bezier(.55, .055, .675, .19)
 }
 
 .letter.behind {
-    transform: rotateX(-90deg);
+    transform: rotateX(-90deg)
 }
 
 .letter.in {
-    transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotateX(0);
+    transition: transform .38s cubic-bezier(.175, .885, .32, 1.275)
 }
 
 .top {
-    padding-bottom: 240px;
+    padding-bottom: 240px
 }
 
 .main {
     background-color: #fff;
     color: #000;
-    padding-bottom: 100px;
+    padding-bottom: 100px
 }
 
 .contents div {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0
 }
 
 .contents .line {
     border-bottom: solid 1px #000;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .skills {
     color: #fff;
-    padding-bottom: 100px;
+    padding-bottom: 100px
 }
 
 .parallax>use {
-    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite
 }
 
 .parallax>use:nth-child(1) {
     animation-delay: -2s;
-    animation-duration: 7s;
+    animation-duration: 7s
 }
 
 .parallax>use:nth-child(2) {
     animation-delay: -3s;
-    animation-duration: 10s;
+    animation-duration: 10s
 }
 
 .parallax>use:nth-child(3) {
     animation-delay: -4s;
-    animation-duration: 13s;
+    animation-duration: 13s
 }
 
 .parallax>use:nth-child(4) {
     animation-delay: -5s;
-    animation-duration: 20s;
+    animation-duration: 20s
 }
 
 @keyframes move-forever {
     0% {
-        transform: translate3d(-90px, 0, 0);
+        transform: translate3d(-90px, 0, 0)
     }
     100% {
-        transform: translate3d(85px, 0, 0);
+        transform: translate3d(85px, 0, 0)
     }
 }
 
@@ -269,12 +292,9 @@ p {
     height: 10px;
     background: rgba(188, 144, 144, 0);
     border-radius: 50%;
-    transition: 300ms;
+    transition: .3s;
     transition-timing-function: ease-out;
     pointer-events: none;
     z-index: 100000;
-    filter: blur(3px);
+    filter: blur(3px)
 }
-
-
-/*---------mobile size------------------------------------------------------------------*/
