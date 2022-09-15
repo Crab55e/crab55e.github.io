@@ -1,9 +1,30 @@
-/* THE IMAGES - CSS*/
-
 .images {
-    width: 100%;
+    width: 100%
+}
+
+div.images ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    position: relative
 }
 
 div.images ul li img {
-    width: 30%;
+    width: 75%;
+    margin: 16% 8.3333333% 8.3333333% 8.3333333%;
+    position: relative;
+    filter: drop-shadow(0 0 0 #0000);
+    transition: .4s ease-out;
+}
+
+div.images ul:nth-child(odd) li img:hover {
+    width: 90%;
+    margin: 0;
+    filter: drop-shadow(20px 20px 1px #0004);
+}
+
+div.images ul:nth-child(even) li img:hover {
+    width: 90%;
+    margin: 0;
+    filter: drop-shadow(-20px 20px 1px #0004);
 }
