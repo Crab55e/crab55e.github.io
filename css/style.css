@@ -1,9 +1,14 @@
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=M+PLUS+Rounded+1c:wght@300&display=swap);
+html {
+    overflow: auto;
+}
+
 body {
     background: #1cbbff;
     text-align: center;
     font-family: 'Josefin Sans', 'M PLUS Rounded 1c', sans-serif;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {

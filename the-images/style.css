@@ -10,21 +10,36 @@ div.images ul {
 }
 
 div.images ul li img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     width: 75%;
     margin: 16% 8.3333333% 8.3333333% 8.3333333%;
     position: relative;
     filter: drop-shadow(0 0 0 #0000);
-    transition: .4s ease-out;
+    transition: .3s ease;
 }
 
-div.images ul:nth-child(odd) li img:hover {
+div.images ul li:nth-child(odd) img:hover {
     width: 90%;
     margin: 0;
     filter: drop-shadow(20px 20px 1px #0004);
+    rotate: 11.25deg;
 }
 
-div.images ul:nth-child(even) li img:hover {
+div.images ul li:nth-child(even) img:hover {
     width: 90%;
     margin: 0;
     filter: drop-shadow(-20px 20px 1px #0004);
+    rotate: -11.25deg;
+}
+
+.toggle-size {
+    transition: 1s;
+}
+
+.full-size {
+    transition: 1s;
+    zoom: 110%;
 }
