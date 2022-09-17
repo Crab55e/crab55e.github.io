@@ -18,7 +18,8 @@ div.images ul li img {
     margin: 16% 8.3333333% 8.3333333% 8.3333333%;
     position: relative;
     filter: drop-shadow(0 0 0 #0000);
-    transition: .3s ease;
+    transition: .92s ease;
+    cursor: pointer;
 }
 
 div.images ul li:nth-child(odd) img:hover {
@@ -40,6 +41,22 @@ div.images ul li:nth-child(even) img:hover {
 }
 
 .full-size {
+    z-index: 1000;
     transition: 1s;
-    zoom: 110%;
+    filter: drop-shadow(50px 50px 0px #0004);
+    width: 100%;
+    max-width: 896px;
+    position: fixed;
+    top: 7%;
+    left: 20%;
+}
+
+div.images ul li div.full-size img:hover {
+    rotate: 0deg;
+    width: 75%;
+    filter: drop-shadow(-20px 20px 1px #0000) brightness(1.25);
+}
+
+div.images ul li div.full-size img {
+    margin: 0 0 0 0;
 }
