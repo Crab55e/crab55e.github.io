@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=M+PLUS+Rounded+1c:wght@300&display=swap);
+* {
+    visibility: hidden!important;
+}
 html {
     overflow: auto;
 }
